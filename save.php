@@ -22,7 +22,7 @@ $t = time();
 $sql = "INSERT INTO msg(`username`,`content`,`intime`) values('$user','$msg','$t')";
 $is = $mysqli->query($sql);
 if($is == true){
-    echo "成功";
+    header("Location:test.php");
 }else{
     echo "失败";
 }
